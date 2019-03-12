@@ -1,21 +1,20 @@
-/**
- * Created with Android Studio.
- * User: sanfan.hx
- * Date: 2019/1/6
- * Time: 下午17:08
- * email: sanfan.hx@alibaba-inc.com
- * tartget: SnackBarAction 的示例
- */
-import '../../../../common/widget_demo.dart';
+/// Created with Android Studio.
+/// User: sanfan.hx
+/// Date: 2019/1/6
+/// Time: 下午17:08
+/// email: sanfan.hx@alibaba-inc.com
+/// target: SnackBarAction 的示例
+
 import 'package:flutter/material.dart';
 
+import 'package:flutter_go/components/widget_demo.dart';
 import './demo.dart';
 
 const String _Text0 = """
 ### **简介**
 > SnackBarAction 来实现并行界面的横向滑动展示
 
-TabBar，是材料设计中很常用的一种横向标签. 来实现并行界面的横向滑动展示，在Flutter的世界中，TabBar有着相同的作用。通常，我们会在AppBar的底部部分结合TabBarView来使用TabBar。
+- TabBar，是材料设计中很常用的一种横向标签. 来实现并行界面的横向滑动展示，在Flutter的世界中，TabBar有着相同的作用。通常，我们会在AppBar的底部部分结合TabBarView来使用TabBar;
 
 
 
@@ -57,7 +56,7 @@ class _DemoState extends State<Demo> {
   Widget build(BuildContext context) {
     return WidgetDemo(
       title: 'TabBar',
-      codeUrl: 'components/Bar/TabBar/index.dart',
+      codeUrl: 'components/Bar/TabBar/demo.dart',
       contentList: [
         _Text0,
         TabBarDemo()

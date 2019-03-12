@@ -1,18 +1,13 @@
-/**
- * Created with Android Studio.
- * User: ryan
- * Date: 2019/1/1
- * Time: 下午11:11
- * email: zhu.yan@alibaba-inc.com
- * tartget: ButtonBar 的示例
- */
+/// Created with Android Studio.
+/// User: 一晟
+/// Date: 2019/1/1
+/// Time: 下午11:11
+/// email: zhu.yan@alibaba-inc.com
+/// target: ButtonBar 的示例
 
 import 'package:flutter/material.dart';
 
-/*
-* Checkbox 默认按钮的实例
-* index 当前checkbox 的索引值
-* */
+// ButtonBar 默认的实例
 class ButtonBarFullDefault extends StatefulWidget {
   const ButtonBarFullDefault() : super();
 
@@ -20,9 +15,7 @@ class ButtonBarFullDefault extends StatefulWidget {
   State<StatefulWidget> createState() => _ButtonBarFullDefault();
 }
 
-/*
-* ButtonBar 默认的实例,有状态
-* */
+// ButtonBar 默认的实例,有状态
 class _ButtonBarFullDefault extends State {
   @override
   Widget build(BuildContext context) {
@@ -32,9 +25,7 @@ class _ButtonBarFullDefault extends State {
   }
 }
 
-/*
-* ButtonBar 默认的实例,无状态
-* */
+// ButtonBar 默认的实例,无状态
 class ButtonBarLessDefault extends StatelessWidget {
   final widget;
   final parent;
@@ -45,9 +36,9 @@ class ButtonBarLessDefault extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: new EdgeInsets.symmetric(vertical: 0.0),
+        margin:  EdgeInsets.symmetric(vertical: 0.0),
         height: 100.0,
-        child: new Scrollbar(child:ListView(
+        child:  Scrollbar(child:ListView(
             scrollDirection: Axis.horizontal, // 水平listView
             children: <Widget>[
               ButtonBar(

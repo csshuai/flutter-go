@@ -1,9 +1,11 @@
-/**
- * @author 一凨
- */
+/// @author 一凨
+
 import 'package:flutter/material.dart';
-import '../common/Style.dart';
-import '../common/widget_name_to_icon.dart';
+
+import 'package:flutter_go/utils/style.dart';
+import 'package:flutter_go/resources/widget_name_to_icon.dart';
+
+String _widgetName;
 
 class WidgetItem extends StatelessWidget {
   final String title;
@@ -11,10 +13,15 @@ class WidgetItem extends StatelessWidget {
   final int index; //用于计算border
   final int totalCount;
   final int rowLength;
-  String _widgetName;
+  final String textSize;
 
   WidgetItem(
-      {this.title, this.onTap, this.index, this.totalCount, this.rowLength});
+      {this.title,
+      this.onTap,
+      this.index,
+      this.totalCount,
+      this.rowLength,
+      this.textSize});
 
   Border _buildBorder(context) {
     Border _border;
@@ -63,6 +70,9 @@ class WidgetItem extends StatelessWidget {
         Icons.crop,
       );
     }
+    final textStyle = (textSize == 'middle')
+        ? TextStyle(fontSize: 13.8, fontFamily: 'MediumItalic')
+        : TextStyle(fontSize: 16.0);
     return InkWell(
       onTap: onTap,
       child: Container(
@@ -79,7 +89,7 @@ class WidgetItem extends StatelessWidget {
             SizedBox(
               height: 8.0,
             ),
-            Text(_widgetName),
+            Text(_widgetName, style: textStyle),
           ],
         ),
       ),

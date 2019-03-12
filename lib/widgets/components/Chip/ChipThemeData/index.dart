@@ -1,11 +1,11 @@
-/*
- * @Author: xiaojia.dxj
- * @Date: 2018-12-18 15:14:03 
- * @Last Modified by: xiaojia.dxj
- * @Last Modified time: 2018-12-18 17:38:56
- */
+/// @Author: xiaojia.dxj
+/// @Date: 2018-12-18 15:14:03 
+/// @Last Modified by: xiaojia.dxj
+/// @Last Modified time: 2018-12-18 17:38:56
+
 import 'package:flutter/material.dart';
-import '../../../../common/widget_demo.dart';
+
+import 'package:flutter_go/components/widget_demo.dart';
 import 'demo.dart';
 
 const String content0 = '''
@@ -17,7 +17,7 @@ const String content0 = '''
 const String content1 = '''
 ### **基本用法**
 - 创建ChipThemeData最简单的方法是使用copyWith您从得到一个ChipTheme.of，
-或创建一个全新的一个具有 ChipThemeData..fromDefaults。。
+或创建一个全新的一个具有 ChipThemeData..fromDefaults
 ''';
 
 class Demo extends StatefulWidget {
